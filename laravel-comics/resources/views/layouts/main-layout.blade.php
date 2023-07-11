@@ -19,7 +19,11 @@
 
    <div>
 
+     @include("components.header")
      @yield("content")
+     @include("components.footer")
+
+    
 
    </div>
 

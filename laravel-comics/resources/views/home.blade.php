@@ -2,6 +2,24 @@
 
 @section ("content")
 
-<h1>Hello from Home</h1>
+<main>
+
+    @foreach ($fumetti as $fumetto)
+
+        <div class="card">
+
+          {{$fumetto["title"]}}
+
+        </div>
+
+        <p> {{$fumetto["description"]}}</p>
+
+        <img src="{{ $fumetto['thumb'] }}" alt="non trovata">
+
+      @endforeach
+
+</main>
+
+
 
 @endsection
